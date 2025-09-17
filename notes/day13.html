@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advanced java script</title>
+</head>
+<body>
+    <script>
+        // try{
+        //     //code that may throw an error
+        // }catch(error){
+        //     //code to handle the error
+        // }finally{
+        //     //code that will alaways execute
+        // }
+        //exmple
+    //     try{
+    //         let atmpin=2345;
+    //         if(atmpin==1234){
+    //         throw"incorrect pin";
+    //     }
+    
+    //     console.log("enter correct pin");
+    // }
+    //     catch(error){
+    //         console.log(""+error);
+    //     }
+    //     finally{
+    //         console.log("thank you for using atm");
+    //     }
+    //examle2
+    //definition:
+    //JSON-java script object notation
+    //JSON.parse()-to convert json string into js object
+    //JSON.string()-to convert js object into json string
+    //let jsonstring=`{name:"john"}`;
+    //let jsobject=JSON.Parse(jsonstring);
+    //console.log(jsobject);
+    //let jsobject1={name:"john"};
+    //let jsonstring1=JSON.Stringify(jsobject1);
+    //console.log(jsonstring1);
+    fetch("data.json")
+    .then(response=>response.json())
+    .then(data=>{
+        for(let student of data.students){
+            console.log(student.name,"",student.id);
+        }
+    })
+    </script>
+</body>
+</html>

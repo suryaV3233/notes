@@ -1,0 +1,8 @@
+{
+    "students": [
+        {"name":"zx10r","id":1},
+        {"name":"cbr1000rr","id":2},
+        {"name":"r1","id":3}
+    ]
+}
+fetch()
